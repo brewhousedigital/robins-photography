@@ -18,23 +18,10 @@ module.exports = async function() {
 
 	// Create Gallery from folder
 	// Somehow the data folder can pull from the source root. Not sure how.
-	fs.readdir("./source/images/uploads", (err, files) => {
-		if(files !== null && files !== undefined) {
-			let newJSONFile = [];
-			files.forEach((el, index) => {
-				// Forestry automatically slugifies image names
-				/*let newPageName = slugify(el,
-					{replacement: '-', remove: undefined, lower: true, strict: true}
-				);*/
+	let listOfImages = fs.readdirSync("./source/images/uploads");
+	if(listOfImages !== null && listOfImages !== undefined) {
+		console.log("listOfImages", listOfImages)
 
-				newJSONFile.push(el)
-			})
-
-			console.log("newJSONFile", newJSONFile)
-
-			fs.writeFile('source/_data/imageGallery.json', JSON.stringify(newJSONFile), (error) => {
-				console.log(error)
-			})
-		}
-	})
+		fs.writeFileSync('source/_data/imageGallery.json', JSON.stringify(listOfImages));
+	}
 };
