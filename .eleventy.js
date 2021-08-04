@@ -169,7 +169,16 @@ module.exports = function(eleventyConfig) {
 
 
 
+	// Create Gallery from folder
+	// Somehow the data folder can pull from the source root. Not sure how.
+	let listOfImages = fs.readdirSync("./source/images/uploads");
+	if(listOfImages !== null && listOfImages !== undefined) {
+		console.log("listOfImages", listOfImages)
 
+		fs.writeFileSync(
+			'source/_data/imageGallery.json',
+			JSON.stringify(listOfImages));
+	}
 
 
 
