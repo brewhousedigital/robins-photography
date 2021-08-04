@@ -1,0 +1,12 @@
+---
+layout: layouts/base.njk
+title: "All Blogs"
+permalink: /posts/
+---
+
+<div class="container">
+	<h1>Blog Posts</h1>
+
+	{% set postslist = collections.posts %}
+	{% include "source/pages/page-components/blog-listing-template.njk" %}
+</div><!-- end container -->
