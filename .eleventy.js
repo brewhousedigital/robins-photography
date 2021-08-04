@@ -166,6 +166,19 @@ module.exports = function(eleventyConfig) {
 	});
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 	// Eleventy will move these files to the _site folder on built
 	eleventyConfig.addPassthroughCopy({"source/images": "images"});
 	eleventyConfig.addPassthroughCopy({"source/manifest.json": "manifest.json"});
