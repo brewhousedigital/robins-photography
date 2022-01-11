@@ -2,7 +2,6 @@
 layout: layouts/base.njk
 title: "Home"
 permalink: /
-
 testForestryVariable: "Hello From WebStorm"
 ---
 
