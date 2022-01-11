@@ -18,6 +18,5 @@ testForestryVariable: "Hello From WebStorm"
 	</div>
 	{% endfor %}
 	</div>
-	{# This is an example of a page component #}
-	{#{% include 'source/pages/page-components/latest-3-posts.njk' %}#}
+
 </div><!-- end container -->
