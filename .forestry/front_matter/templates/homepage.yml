@@ -2,8 +2,8 @@
 label: Homepage
 hide_body: true
 fields:
-- name: title
+- name: testForestryVariable
   type: text
   config:
     required: false
-  label: title
+  label: Testing Value
