@@ -7,7 +7,7 @@ sections:
 - type: heading
   label: Pages
 - type: document
-  path: source/pages/homepage
+  path: source/pages/homepage.md
   label: Homepage
 upload_dir: source/images/uploads
 public_path: "/images/uploads"
