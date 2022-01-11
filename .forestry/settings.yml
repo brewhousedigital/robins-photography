@@ -3,7 +3,11 @@ new_page_extension: md
 auto_deploy: false
 admin_path: 
 webhook_url: 
-sections: 
+sections:
+- type: document
+  path: source/pages/homepage.njk
+  label: Homepage
+  match: "**/*"
 upload_dir: source/images/uploads
 public_path: "/images/uploads"
 front_matter_path: ''
