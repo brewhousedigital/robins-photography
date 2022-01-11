@@ -4,8 +4,10 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
+- type: heading
+  label: Pages
 - type: document
-  path: source/pages/homepage.njk
+  path: source/pages/homepage
   label: Homepage
 upload_dir: source/images/uploads
 public_path: "/images/uploads"
