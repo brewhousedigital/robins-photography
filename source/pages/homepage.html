@@ -1,11 +1,10 @@
 ---
 layout: layouts/base.njk
-title: "Home"
-permalink: /
-testForestryVariable: "Hello From WebStorm"
+title: Home
+permalink: "/"
+testForestryVariable: Hello From Forestry
+
 ---
-
-
 <div class="container">
 	<h1 class="display-1">{{ testForestryVariable }}</h1>
 
